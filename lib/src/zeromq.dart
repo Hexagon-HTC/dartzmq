@@ -42,6 +42,9 @@ class ZContext {
 
   /// Keeps track of all sockets that are currently being listened to
   final List<ZSocket> _listening = [];
+  
+  /// Low-level access to the context
+  Pointer<Void> get contextPointer => _context;
 
   /// Create a new global ZContext
   ///
