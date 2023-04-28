@@ -109,7 +109,7 @@ class ZContext {
           }
         }
 
-        _checkReturnCode(rc, ignore: [EAGAIN, EINTR]);
+        _checkReturnCode(rc, ignore: [EAGAIN, EINTR, 35]);
       }
 
       rc = _bindings.zmq_msg_close(frame); // rc == 0
